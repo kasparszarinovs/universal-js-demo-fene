@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "A Werewolf",
+    "imageUrl": "/images/werewolf.jpg"
+  },
+  {
+    "id": 2,
+    "name": "A Wearewolf",
+    "imageUrl": "/images/wearwolf.jpg"
+  },
+  {
+    "id": 3,
+    "name": "A Warewolf",
+    "imageUrl": "/images/warewolf.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Aware Wolf",
+    "imageUrl": "/images/awarewolf.jpg"
+  }
+]
