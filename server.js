@@ -9,7 +9,9 @@ var routes = require('./app/config/routes');
 module.exports = server;
 
 // Expose public directory
-server.use(express.static(__dirname + '/public'));
+server.use(express.static(__dirname + '/public', {
+  index: false
+}));
 
 require('stringify').registerWithRequire({
   extensions: ['.html'],

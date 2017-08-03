@@ -21,4 +21,8 @@ function loadDOMEvents() {
 window.onload = function () {
   loadDOMEvents();
   console.log('Client initialized');
+
+  // Initial render, required if serving from a plain HTML file.
+  // Should match the current URL
+  // require('./app/routes/list').call({ renderer: renderer });
 };
