@@ -6,9 +6,10 @@ var view = require('../views/partials/list.hbs');
 module.exports = routeHandler;
 
 function routeHandler () {
-  api.get('/werewolves.json').then(response => {
+  var handler = this;
+  api.get('/werewolves.json').then(function (response) {
     var data = response.data;
-    this.renderer.render(view, {
+    handler.renderer.render(view, {
       items: data,
       renderedOn: isServer() ? 'server' : 'client',
     });
